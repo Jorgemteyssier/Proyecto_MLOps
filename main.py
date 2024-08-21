@@ -8,7 +8,7 @@ app = FastAPI()
 app.title = "MLOps proyecto 1 recomendacion películas"
 
 #Cargo el Dataset y lo convierto en un df
-df_api=pd.read_parquet(r'C:\Users\Jorge\OneDrive\Escritorio\Proyecto 1\Data_Api.parquet')
+df_api=pd.read_parquet('Data_Api.parquet')
 
 #1. cantidad_filmaciones_mes( Mes ): Se ingresa un mes en idioma Español. Debe devolver la cantidad de películas que fueron estrenadas en el mes consultado en la totalidad del dataset.
 #Ejemplo de retorno: X cantidad de películas fueron estrenadas en el mes de X
@@ -160,7 +160,7 @@ def get_director(nombre_director: str):
 
 #Modelo
 
-df_modelo=pd.read_parquet(r'C:\Users\Jorge\OneDrive\Escritorio\Proyecto 1\Data_Modelo')
+df_modelo=pd.read_parquet('Data_Modelo')
 
 # Crear una instancia de TfidfVectorizer con las stopwords en inglés
 tfidf = TfidfVectorizer(stop_words='english')
