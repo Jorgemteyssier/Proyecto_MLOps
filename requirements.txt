@@ -1,1 +1,5 @@
-
+pandas
+fastapi
+scikit-learn
+uvicorn
+fastparquet
